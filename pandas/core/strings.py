@@ -3166,7 +3166,7 @@ class StringMethods(NoNewAttributesMixin):
         remaining to lowercase.
     Series.str.swapcase : Converts uppercase to lowercase and lowercase to
         uppercase.
-    Series.str.casefold: Removes all case distinctions in the string.
+    Series.str.casefold : Removes all case distinctions in the string.
 
     Examples
     --------
@@ -3211,6 +3211,13 @@ class StringMethods(NoNewAttributesMixin):
     1              capitals
     2    THIS IS A SENTENCE
     3              sWaPcAsE
+    dtype: object
+    
+    >>> s.str.casefold()
+    0                 lower
+    1              capitals
+    2    this is a sentence
+    3              swapcase
     dtype: object
     """
 
